@@ -7,7 +7,7 @@ socket.addEventListener('open', () => {
 socket.addEventListener('message', event => {
     const message = JSON.parse(event.data);
 
-    console.log('Received message:', message); // Log received message
+    console.log('Received message:', message); 
 
     if (message.type === 'nowPlayingMovies') {
         updateNowPlayingMovies(message.data);
@@ -29,7 +29,7 @@ const updateNowPlayingMovies = (movies) => {
     nowPlayingMoviesElement.innerHTML = movies.map(movie => {
         const posterUrl = movie.poster_path ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : 'no_image_available.png';
         const trailerUrl = movie.trailer_key ? `https://www.youtube.com/embed/${movie.trailer_key}` : null;
-        console.log(`Movie: ${movie.title}, Trailer URL: ${trailerUrl}`); // Log trailer URL
+        console.log(`Movie: ${movie.title}, Trailer URL: ${trailerUrl}`); 
         return `
             <div class="movie">
                 <img src="${posterUrl}" alt="${movie.title} poster" class="movie-poster">
