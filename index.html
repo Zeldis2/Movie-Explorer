@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="no-scroll">
+    <div id="app">
+        <header>
+            <h1>Movie Explorer</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search for movies...">
+                <button id="searchButton">Search</button>
+                <button id="homeButton">Home</button>
+            </div>
+        </header>
+        <main>
+            <section id="homeContent">
+                <h2>Welcome to Movie Explorer</h2>
+                <p>Discover and explore your favorite movies. Use the search bar above to find information about any movie.</p><br>
+                <h3>Now Playing Movies</h3>
+                <div id="nowPlayingMovies" class="movies-container">
+                </div>
+
+            </section>
+
+            <section id="results" style="display: none;"></section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Movie Explorer. All rights reserved.</p>
+            <p>Contact: info@movieexplorer.com</p>
+        </footer>
+    </div>
+    <script type="module" src="app.js"></script>
+    <script type="module" src="websocket.js"></script>
+</body>
+</html>

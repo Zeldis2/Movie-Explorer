@@ -1,0 +1,16 @@
+Documentation
+Objective
+The main objective of this project is to create a dynamic single-page website for exploring movies. The website allows users to search for movies, view detailed information about them, and receive real-time updates.
+
+Functionalities and Features
+1. Search Movies: Users can search for movies using the TMDb API.
+2. View Details: Detailed information about movies is displayed, including posters, overviews, and trailers.
+3. Real-Time Updates: The website displays real-time updates using WebSockets.
+4. Responsive Design: The website is designed to be responsive and visually appealing across different devices.
+
+Program Structure
+1. public/index.html: The main HTML file that contains the structure of the webpage.
+2. src/styles.css: The CSS file that styles the webpage.
+3. src/app.js: The JavaScript file that handles movie searches and dynamic content updates.
+4. src/websocket.js: The JavaScript file that handles WebSocket connections for real-time updates.
+5. websocket-server.js: The Node.js WebSocket server that sends real-time updates to the clients.

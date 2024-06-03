@@ -1,0 +1,27 @@
+# Movie Explorer
+
+Movie Explorer is a dynamic single-page website for exploring movies. The website allows users to search for movies, view detailed information about them, and receive real-time updates.
+
+## Features
+
+- **Search Movies**: Users can search for movies using the TMDb API.
+- **View Details**: Detailed information about movies is displayed, including posters, overviews, and trailers.
+- **Real-Time Updates**: The website displays real-time updates using WebSockets.
+- **Responsive Design**: The website is designed to be responsive and visually appealing across different devices.
+
+## Setup Instructions
+
+Follow these steps to set up the project locally on your machine.
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v14.x or later)
+- [npm](https://www.npmjs.com/)
+
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/yourusername/movie-explorer.git// wala pa link
+   cd movie-explorer
