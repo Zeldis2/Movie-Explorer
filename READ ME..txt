@@ -19,9 +19,12 @@ Follow these steps to set up the project locally on your machine.
 - [npm](https://www.npmjs.com/)
 
 ### Installation
+Ensure Node.js and npm are installed:
+node -v
+npm -v
 
-1. **Clone the repository**
+Install the dependencies:
+npm install ws node-fetch
 
-   ```bash
-   git clone https://github.com/yourusername/movie-explorer.git// wala pa link
-   cd movie-explorer
+Start the WebSocket server:
+node websocket-server.js
