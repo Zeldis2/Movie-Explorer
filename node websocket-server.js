@@ -1,5 +1,5 @@
 const WebSocket = require('ws');
-const fetch = require('node-fetch'); // Ensure you have node-fetch installed
+const fetch = require('node-fetch'); 
 const wss = new WebSocket.Server({ port: 8080 });
 
 wss.on('connection', ws => {
@@ -29,7 +29,7 @@ server.on('connection', async (socket) => {
 
     // Function to fetch now-playing movies from TMDb
     const fetchNowPlayingMovies = async () => {
-        const TMDB_API_KEY = '014f851d9687760c28eb4e1cac87cfaf'; // Replace with your TMDb API key
+        const TMDB_API_KEY = '014f851d9687760c28eb4e1cac87cfaf'; 
         const url = `https://api.themoviedb.org/3/movie/now_playing?api_key=${TMDB_API_KEY}&language=en-US&page=1`;
         const response = await fetch(url);
         const data = await response.json();
@@ -37,7 +37,7 @@ server.on('connection', async (socket) => {
             title: movie.title,
             overview: movie.overview,
             poster_path: movie.poster_path
-        })); // Get the first 5 movies from the list of now playing movies
+        })); 
     };
 
     // Send initial movies
