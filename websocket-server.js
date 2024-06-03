@@ -9,7 +9,7 @@
 
         // Function to fetch now-playing movies and their trailers from TMDb
         const fetchNowPlayingMoviesWithTrailers = async () => {
-            const TMDB_API_KEY = '014f851d9687760c28eb4e1cac87cfaf'; // Replace with your TMDb API key
+            const TMDB_API_KEY = '014f851d9687760c28eb4e1cac87cfaf'; 
             const nowPlayingUrl = `https://api.themoviedb.org/3/movie/now_playing?api_key=${TMDB_API_KEY}&language=en-US&page=1`;
             const response = await fetch(nowPlayingUrl);
             const data = await response.json();
@@ -21,7 +21,7 @@
                 const trailerData = await trailerResponse.json();
                 const trailer = trailerData.results.find(video => video.type === 'Trailer' && video.site === 'YouTube');
                 const trailer_key = trailer ? trailer.key : null;
-                console.log(`Movie: ${movie.title}, Trailer Key: ${trailer_key}`); // Log trailer key
+                console.log(`Movie: ${movie.title}, Trailer Key: ${trailer_key}`); 
                 return {
                     id: movie.id,
                     title: movie.title,
