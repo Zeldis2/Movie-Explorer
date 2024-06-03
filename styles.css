@@ -1,4 +1,4 @@
-/* General styles */
+
 html, body {
   height: 100%;
   margin: 0;
@@ -19,7 +19,7 @@ body.no-scroll {
 }
 
 #app {
-  background-color: rgba(0, 0, 0, 0.9); /* Dark overlay for readability */
+  background-color: rgba(0, 0, 0, 0.9); 
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -175,12 +175,12 @@ footer {
   font-size: 0.9em;
   color: #fff;
   width: 100%;
-  margin-top: auto; /* Push the footer to the bottom */
+  margin-top: auto; 
 }
 
 .trailer-container {
   position: relative;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  padding-top: 56.25%; 
   margin-top: 10px;
 }
 
